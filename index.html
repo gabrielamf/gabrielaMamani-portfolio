@@ -5,26 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans:700|Julius+Sans+One|Rajdhani:300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900,900i|Nixie+One&amp;subset=latin-ext" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="vendors/js/modernizr.js"></script>
+    <script src="vendors/js/pace.min.js"></script>
+    <link rel="icon" href="favico.ico" type="image/x-icon">
     <title>Gabriela Mamani</title>
   </head>
 
-<body>
-  <section class="bg-home" id="intro">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-right">
-          <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <div>
+<body id="top">
+  <section id="intro">
+    <div class="bg-home container-fluid">
+      <div class="row overlay centrar text-center">
+        <div class="row" data-aos="fade-up">
+          <div class="">
             <h1 class="title">Hola!, soy Gabriela</h1>
-            <p class="subtitle">Diseñadora gráfica &</p>
+            <p class="subtitle">UX/UI designer &</p>
             <p class="subtitle">front-end developer</p>
           </div>
         </div>
@@ -34,26 +33,20 @@
   <!-- Navigation -->
   <div id="navigation">
     <nav class="navbar navbar-custom" role="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-2 col-md-2">
-            <div class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="50px" viewBox="0 0 350 360">
-                <path fill="#0F1525" d="M 131.974 170.367 h 103.966 v 61.43 c -0.537 30.2 -10.563 55.505 -30.077 75.912 c -19.65 20.271 -44.381 30.679 -74.19 31.232 c -22.993 -0.554 -42.174 -6.35 -57.546 -17.397 c -15.644 -10.631 -27.006 -22.919 -34.09 -36.867 c -2.139 -4.557 -4.078 -8.906 -5.812 -13.048 c -1.605 -4.278 -2.945 -9.664 -4.013 -16.155 c -2.007 -12.149 -3.006 -35.485 -3.006 -70.006 c 0 -35.07 1 -58.543 3.006 -70.42 c 2.139 -11.873 5.414 -21.469 9.825 -28.789 c 7.084 -13.945 18.446 -26.372 34.09 -37.281 c 15.372 -11.045 34.553 -16.705 57.546 -16.983 c 28.207 0.278 51.2 8.906 68.979 25.887 c 17.776 17.119 29.006 38.312 33.686 63.575 h -46.986 c -3.618 -12.211 -10.178 -22.618 -19.679 -31.22 c -9.909 -8.185 -21.958 -12.418 -36.146 -12.696 c -10.44 0.278 -19.411 2.421 -26.906 6.434 c -7.631 4.152 -13.789 9.34 -18.472 15.566 c -5.76 6.505 -9.576 14.877 -11.446 25.116 c -2.143 10.793 -3.213 31.064 -3.213 60.812 c 0 29.75 1.071 49.883 3.213 60.397 c 1.877 10.518 5.696 19.025 11.456 25.53 c 4.686 6.227 10.848 11.278 18.485 15.151 c 7.501 4.566 16.479 6.849 26.928 6.849 c 17.281 0 31.547 -6.094 42.802 -18.281 c 11.252 -11.635 17.013 -26.938 17.281 -45.916 v -15.789 h -59.682 v -43.043 z M 293.35 293.396 h 41.799 v 43.061 h -41.799 v -43.061 z"/>
-              </svg>
-            </div>
-          </div>
-          <div class="col-xs-10 col-md-10">
+      <div class="">
+        <div class=" nav-pad">
+          <div class="">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                 <i class="fas fa-bars fa-2x"></i>
               </button>
             </div>
             <div class="collapse navbar-collapse" id="menu">
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right" data-aos="fade-up">
                 <li class="active"><a href="#intro">Inicio</a></li>
                 <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#service">Proyectos</a></li>
+                <li><a href="#works">Proyectos</a></li>
+                <li><a href="#tools">Herramientas</a></li>
                 <li><a href="#contact">Contáctame</a></li>
               </ul>
             </div>
@@ -62,14 +55,15 @@
       </div>
     </nav>
   </div>
-  <section id="about" class="home-section bg-white">
+  <section id="about" class="home-section bg-white" data-aos="fade-up">
     <div class="container marginbot-50">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="animatedParent">
-            <div class="section-heading text-center animated bounceInDown">
-              <h2 class="h-bold titleSection">Te cuento un poco sobre mí</h2>
+            <div class="text-center animated bounceInDown">
+              <h2 class="titleSection">sobre mi</h2>
               <div class="divider-header"></div>
+              <h5 class="subtitleSection">te cuento un poco</h5>
             </div>
           </div>
         </div>
@@ -78,119 +72,214 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 animatedParent">
-          <div class="text-center text-description">
+          <div class="text-left text-description">
             <p>
-                Soy Diseñadora gráfica y front-end developer, estoy convencida del poder y la magia que se crea al unir la tecnología y el diseño, y cómo ambos mundos tan cambiantes me impulsan a ser cada vez más autodidacta, constante y perseverante.
-            </p>
-            <p>
-                Mi compromiso e interés sobre el factor transformador que tiene el desarrollo de productos digitales en la vida cotidiana de las personas, hace que sea más conciente y más humana al momento de programar, teniendo en cuenta de que estos aportan de manera significa y positiva sobre la vida de los demás.
+              Soy Gabriela Mamani, UX/UI designer y front-end dedeveloper egresada de Laboratoria. Mi curiosidad innata por la tecnología y su conexión con las personas me impulsa a imaginar y diseñar productos digitales cada vez más humanos y eficientes, que brinden una experiencia útil, positiva y agradable a los usuarios.
             </p>
             <br>
-            <a  class="btn-cv" href="assets/docs/gabriela-mamani-cv.pdf" download role="button"><i class="fas fa-download btncv"></i>Descarga mi CV</a>
+            <p>
+              A mi experiencia como diseñadora gráfica le sumé el estudio por conocer al usuario y su contexto, la observación y la investigación, entonces aprendí a tomar decisiones de diseño basados en resultados de una constante investigación. 
+              Aprendí que trabajar en equipo es clave para llegar a los objetivos, mantengo siempre una actitud positiva y entusiasta, dispuesta a colaborar con los demás. <span class="carita">:)</span>
+            </p>
           </div>
+          <a  class="btn-cv" href="assets/docs/gabriela-mamani-cv.pdf" download role="button">DESCARGA MI CV</a>
         </div>
       </div>
     </div>
   </section>
-  <section id="service" class="home-section color-dark bg-gray">
-    <div class="container marginbot-50">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div>
-            <div class="section-heading text-center">
-              <h2 class="h-bold titleSection">Proyectos hechos con esfuerzo y pasión</h2>
-              <div class="divider-header"></div>
+
+<!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+                
+            <div class="section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h2 class="subhead titleSection2">Proyectos</h2>
+                    <div class="divider-header2"></div>
+                    <h5 class="subtitleSection2 display-2 display-2--light">el reto de siempre aprender</h5>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+                  
+                    <div class="masonry__brick" data-aos="fade-up">
+                      
+                        <div class="item-folio">    
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-weather-time.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                    <img class="img-responsive" src="images/portfolio/weather-time.jpg" 
+                                         srcset="images/portfolio/weather-time.jpg 1x, images/portfolio/weather-time@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                              
+                                <h3 class="item-folio__title">
+                                    WEATHER TIME
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Front-end development y web design
+                                </p>
+                            </div>
+                            <div class="item-folio__caption">
+                                <p>Weather-time es una web responsive que proporciona datos sobre el clima, gracias a la api weather, también puedes chatear con otras personas que les interesa el cambio climático.</p>
+                                <a href="https://gabrielamf.github.io/weather-time/web/" target="_blank" class="item-folio__demo" title="Project link">
+                                  VER DEMO
+                              </a>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-lab-car.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                    <img <img class="img-responsive" src="images/portfolio/lab-car.jpg" 
+                                         srcset="images/portfolio/lab-car.jpg 1x, images/portfolio/lab-car@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    LAB CAR
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Front-end development
+                                </p>
+                            </div>
+    
+                            <div class="item-folio__caption">
+                              <p>Lab car es una página web responsive, en la que puedes ingresar un punto de partida y otro de llegada; el api de google maps nos proporciona el trazado de ruta.</p>
+                              <a href="https://gabrielamf.github.io/lab-car-boilerplate/" target="_blank" class="item-folio__demo" title="Project link">
+                                VER DEMO
+                            </a>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-cardify.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                    <img <img class="img-responsive" src="images/portfolio/cardify.jpg"
+                                         srcset="images/portfolio/cardify.jpg 1x, images/portfolio/cardify@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                  CARDIFY
+                                </h3>
+                                <p class="item-folio__cat">
+                                  Front-end development y web design
+                                </p>
+                            </div>
+    
+                            <div class="item-folio__caption">
+                              <p>Cardify es un plugin de jQuery que dado un contenedor busca las imagenes, las envuelve en un figure y al pasar el mouse sobre la imagen agrega una pequeña descripción.</p>
+                              <a href="https://gabrielamf.github.io/cardify/public/" target="_blank" class="item-folio__demo" title="Project link">
+                                VER DEMO
+                            </a>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-website.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                    <img <img class="img-responsive" src="images/portfolio/website.jpg" 
+                                         srcset="images/portfolio/website.jpg 1x, images/portfolio/website@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    MY WEBSITE
+                                </h3>
+                                <p class="item-folio__cat">
+                                    UI designer
+                                </p>
+                            </div>
+
+                            <div class="item-folio__caption">
+                              <p>Mi website, es una web-app responsive, en dónde muestro algunos proyectos que he realizado durante el bootcamp en Laboratoria.</p>
+                              <a href="https://gabrielamf.github.io/gabrielaMamani-portfolio/" target="_blank" class="item-folio__demo" title="Project link">
+                                VER DEMO
+                            </a>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
             </div>
-          </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__top-bar">
+                  <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                  "Zoom in/out"></button>
+                  <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                              <div class="pswp__preloader__donut"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
         </div>
-      </div>
 
-    </div>
+    </div> <!-- end photoSwipe background -->
 
-
-    <div class="text-center">
-      <div class="container">
-
-        <div class="row animatedParent">
-          <div class="col-md-4">
-            <div class="animated rotateInDownLeft">
-              <div class="service-box">
-                <div class="service-icon">
-                  <i class="fas fa-car fa-2x"></i>
-                </div>
-                <div class="service-desc">
-                  <h5 class="title-proyect">Lab car</h5>
-                  <div class="divider-header-works"></div>
-                  <figure>
-                    <img class="img-responsive img-proyecto" src="assets/img/lab-car.png" alt="labcar">
-                  </figure>
-                  <div class="divider-header-works"></div>
-                  <p class="text-description">
-                      Lab car es una página web responsive, en la que puedes ingresar un punto de partida y otro de llegada; el api de google maps nos proporciona el trazado de ruta.
-                  </p>
-                  <a href="https://github.com/gabrielamf/lab-car-boilerplate" target="_blank" class="btn btn-skin">GITHUB</a>
-                  <a href="https://gabrielamf.github.io/lab-car-boilerplate/" target="_blank" class="btn btn-skin">DEMO</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="animated rotateInDownLeft slow">
-              <div class="service-box">
-                <div class="service-icon">
-                  <i class="fas fa-sun fa-2x"></i>
-                </div>
-                <div class="service-desc">
-                  <h5 class="title-proyect">Weather time</h5>
-                  <div class="divider-header-works"></div>
-                  <figure>
-                    <img class="img-responsive img-proyecto" src="assets/img/weather-time.png" alt="labcar">
-                  </figure>
-                  <div class="divider-header-works"></div>
-                  <p class="text-description">
-                      Weather-time es una web responsive que proporciona datos sobre el clima, gracias a la api weather, también puedes chatear con otras personas que les interesa el cambio climático.
-                  </p>
-                  <a href="https://github.com/gabrielamf/weather-time" target="_blank" class="btn btn-skin">GITHUB</a>
-                  <a href="https://gabrielamf.github.io/weather-time/web/" target="_blank" class="btn btn-skin">DEMO</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="animated rotateInDownLeft slower">
-              <div class="service-box">
-                <div class="service-icon">
-                  <i class="fas fa-image fa-2x"></i>
-                </div>
-                <div class="service-desc">
-                  <h5 class="title-proyect">Cardify</h5>
-                  <div class="divider-header-works"></div>
-                  <figure>
-                    <img class="img-responsive img-proyecto" src="assets/img/cardify.png" alt="labcar">
-                  </figure>
-                  <div class="divider-header-works"></div>
-                  <p class="text-description">
-                    Cardify es un plugin de jQuery que dado un contenedor busca las imagenes, las envuelve en un figure y al pasar el mouse sobre la imagen agrega una pequeña descripción.
-                  </p>
-                  <a href="https://github.com/gabrielamf/cardify" target="_blank" class="btn btn-skin">GITHUB</a>
-                  <a href="https://gabrielamf.github.io/cardify/public/" target="_blank" class="btn btn-skin">DEMO</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="works" class="home-section color-dark text-center bg-white">
+<!-- /Section: tools -->
+  <section id="tools" class="home-section color-dark text-center bg-white" data-aos="fade-up">
     <div class="container marginbot-50">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div>
             <div class="animatedParent">
               <div class="section-heading text-center">
-                <h2 class="h-bold animated bounceInDown titleSection">herramientas que transforman</h2>
-                <div class="divider-header"></div>
+                <h2 class="h-bold animated bounceInDown titleSection2">herramientas</h2>
+                <div class="divider-header2"></div>
+                <h5 class="subtitleSection2 display-2 display-2--light">que me acompañan en cada proyecto</h5>
               </div>
             </div>
           </div>
@@ -198,97 +287,62 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row animatedParent">
-        <div class="col-xs-12 col-lg-5">
-          <div class="service-desc">
-            <h5 class="title-proyect text-left title-phrase">Detrás de una gran <span class="text-wine">página web</span>,</h5>
-            <h5 class="title-proyect text-left title-phrase">hay un <span class="text-cel">conjunto de herramientas</span></h5>
-            <h5 class="title-proyect text-left title-phrase">que se fusionan y crean</h5>
-            <h5 class="title-proyect text-left title-phrase">algo <span class="text-wine">maravilloso</span></h5>
-            <hr class="separation">
-          </div>
+        <div class="list-group col-xs-12 col-sm-6 col-md-4">
+          <a class="list-group-item  active">
+            UX MÉTODOS
+          </a>
+          <a class="list-group-item">Persona</a>
+          <a class="list-group-item list-group-item-action">Wireframing / Prototyping</a>
+          <a class="list-group-item list-group-item-action">Usability testing</a>
+          <a class="list-group-item list-group-item-action">Entrevistas / Encuestas</a>
         </div>
-        <div class="col-xs-12 col-lg-7">
-          <div class="row">
-            <div class="col-lg-3 col-xs-3">
-              <img class="img-responsive logos" src="assets/img/logos-01.png" alt="html5">
-            </div>
-            <div class="col-lg-3 col-xs-3">
-              <img class="img-responsive logos" src="assets/img/logos-06.png" alt="css3">
-            </div>
-            <div class="col-lg-3 col-xs-3">
-              <img class="img-responsive logos" src="assets/img/logos-12.png" alt="js">
-            </div>
-            <div class="col-lg-3 col-xs-3">
-              <img class="img-responsive logos" src="assets/img/logos-03.png" alt="jquery">
-            </div>
-          </div>
-          <div class="row">
-              <div class="col-lg-3 col-xs-3">
-                <img class="img-responsive logos" src="assets/img/logos-05.png" alt="html5">
-              </div>
-              <div class="col-lg-3 col-xs-3">
-                <img class="img-responsive logos" src="assets/img/logos-08.png" alt="css3">
-              </div>
-              <div class="col-lg-3 col-xs-3">
-                <img class="img-responsive logos" src="assets/img/logos-11.png" alt="js">
-              </div>
-              <div class="col-lg-3 col-xs-3">
-                <img class="img-responsive logos" src="assets/img/logos-07.png" alt="jquery">
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-xs-3">
-                  <img class="img-responsive logos" src="assets/img/logos-04.png" alt="html5">
-                </div>
-                <div class="col-lg-3 col-xs-3">
-                  <img class="img-responsive logos" src="assets/img/logos-09.png" alt="css3">
-                </div>
-                <div class="col-lg-3 col-xs-3">
-                  <img class="img-responsive logos" src="assets/img/logos-02.png" alt="js">
-                </div>
-                <div class="col-lg-3 col-xs-3">
-                  <img class="img-responsive logos" src="assets/img/logos-10.png" alt="jquery">
-                </div>
-              </div>
+        <div class="list-group col-xs-12 col-sm-6 col-md-4">
+          <a class="list-group-item  active">
+            PROTOTYPING TOOLS
+          </a>
+          <a class="list-group-item list-group-item-action">Sketch</a>
+          <a class="list-group-item list-group-item-action">Figma</a>
+          <a class="list-group-item list-group-item-action">Photoshop, Illustrator, Indesign</a>
+          <a class="list-group-item list-group-item-action">Invision / Marvel</a>
+        </div>
+        <div class="list-group col-xs-12 col-sm-6 col-md-4">
+          <a class="list-group-item  active">
+            DESARROLLO
+          </a>
+          <a class="list-group-item list-group-item-action">HTML5 / CSS3</a>
+          <a class="list-group-item list-group-item-action">Bootstrap / Materialize</a>
+          <a class="list-group-item list-group-item-action">Javascript / Jquery</a>
+          <a class="list-group-item list-group-item-action">Github</a>
         </div>
       </div>
     </div>
 
   </section>
-  <!-- /Section: works -->
+  <!-- /Section: tools -->
 
   <!-- Section: contact -->
-  <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">
+  <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center" data-aos="fade-up">
     <div class="container marginbot-50">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="animatedParent">
             <div class="section-heading text-center">
-              <h2 class="h-bold animated bounceInDown titleSection">Construyamos algo juntos</h2>
+              <h2 class="h-bold animated bounceInDown titleSection">Contáctame</h2>
               <div class="divider-header"></div>
-              <div class="service-desc">
-                <p class="construir">
-                  “Puedes diseñar y crear, y construir el lugar más maravilloso del mundo, pero se necesita gente para hacer el sueño realidad", Walt Disney.
-                </p>
-              </div>
+              <h5 class="subtitleSection">construyamos algo juntos</h5>
               <br>
               <div class="text-center">
                 <div>
-                  <i class="far fa-envelope fa-1x"></i>
-                  <span class="datos">gabriela.mamani.f@gmail.com</span>
+                  <p class="datos">glennygabb@gmail.com</p>
                 </div>
                 <div>
-                  <i class="fas fa-phone fa-1x"></i>
-                  <span class="datos">969639574</span>
+                  <p class="datos">969639574</p>
                 </div>
               </div>
-              <br>
-              <div class="divider-header text-center"></div>
-                <p>Encuéntrame en</p>
-                <a href="https://github.com/gabrielamf" class="pad-icon"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/gabriela-mamani/" class="pad-icon"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a  class="btn-contact" href="https://github.com/gabrielamf" target="_blank" download role="button">GITHUB</a>
+                <a  class="btn-contact" href="https://www.linkedin.com/in/gabriela-mamani/" target="_blank" download role="button">LINKEDIN</a>
             </div>
           </div>
         </div>
@@ -309,10 +363,13 @@
     </div>
   </footer>
 
+
+
   <!-- Core JavaScript Files -->
-  <script src="vendors/js/jquery.min.js"></script>
+  <script src="vendors/js/jquery-3.2.1.min.js"></script>
   <script src="vendors/bootstrap/bootstrap.min.js"></script>
-  <script src="vendors/js/jquery.sticky.js"></script> 
   <script src="vendors/js/custom.js"></script>
+  <script src="vendors/js/plugins.js"></script>
+  <script src="vendors/js/main.js"></script>
 </body>
 </html>
