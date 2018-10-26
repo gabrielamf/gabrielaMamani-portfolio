@@ -22,7 +22,7 @@ html {
 } 
 .text-description {
 	font-size: 1.rem;
-	padding: 8rem 2rem 0rem;
+	padding: 5rem 2rem 0rem;
 }
 
 
@@ -63,7 +63,7 @@ a {
 }
 .subtitle {
 	color:rgb(174, 174, 174);
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
